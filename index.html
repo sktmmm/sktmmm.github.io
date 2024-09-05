@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>心理减压系统</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-r from-blue-200 to-purple-300 text-gray-800">
+    <header class="bg-blue-600 text-white p-4 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-3xl font-bold">心理减压系统</h1>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="7.html" class="hover:underline">深呼吸练习</a></li>
+                    <li><a href="8.html" class="hover:underline">冥想指导</a></li>
+                    <li><a href="9.html" class="hover:underline">瑜伽课程</a></li>
+                    <li><a href="10.html" class="hover:underline">个人中心</a></li>
+                </ul>
+            </nav>
+            <div>
+                <button class="bg-blue-500 text-white p-2 rounded hover:bg-blue-600 transition-colors duration-300" onclick="document.getElementById('login-modal').classList.remove('hidden')">登录</button>
+            </div>
+        </div>
+    </header>
+
+    <div id="login-modal" class="fixed inset-0 bg-gray-800 bg-opacity-50 flex justify-center items-center hidden">
+        <div class="bg-white p-6 rounded-lg shadow-md max-w-md">
+            <h2 class="text-2xl font-semibold mb-4 text-purple-700">用户登录</h2>
+            <form>
+                <div class="mb-4">
+                    <label class="block text-sm font-medium mb-2" for="username">用户名</label>
+                    <input class="border border-gray-300 p-2 w-full rounded" type="text" id="username" required>
+                </div>
+                <div class="mb-4">
+                    <label class="block text-sm font-medium mb-2" for="password">密码</label>
+                    <input class="border border-gray-300 p-2 w-full rounded" type="password" id="password" required>
+                </div>
+                <button class="bg-blue-500 text-white p-2 rounded hover:bg-blue-600 transition-colors duration-300" type="submit">登录</button>
+                <button type="button" class="mt-4 text-red-500" onclick="document.getElementById('login-modal').classList.add('hidden')">关闭</button>
+            </form>
+        </div>
+    </div>
+
+    <main class="container mx-auto p-6">
+        <h2 class="text-2xl font-semibold mb-4 text-purple-700">欢迎使用心理减压系统</h2>
+        <p class="mb-4">心理减压系统旨在帮助用户通过深呼吸、冥想和瑜伽等方法来减轻压力、放松身心。无论您是想要缓解焦虑，还是希望提升心理健康，我们提供的资源都能为您提供支持。</p>
+        <p class="mb-4">请根据您的需求选择相应的视频类型，开始您的心理减压之旅。</p>
+        <p class="mb-4">我们的目标是为您提供一个安全、舒适的环境，让您能够轻松地找到适合自己的减压方法。</p>
+        <p class="mb-4">请选择您想要观看的视频类型：</p>
+        <ul class="list-disc pl-5">
+            <li><a href="7.html" class="text-blue-600 hover:underline">深呼吸练习</a></li>
+            <li><a href="8.html" class="text-blue-600 hover:underline">冥想指导</a></li>
+            <li><a href="9.html" class="text-blue-600 hover:underline">瑜伽课程</a></li>
+        </ul>
+    </main>
+
+    <footer class="bg-blue-600 text-white p-4 text-center">
+        <p>© 2023 心理减压系统. 保留所有权利.</p>
+    </footer>
+</body>
+</html>
